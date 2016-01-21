@@ -17,10 +17,13 @@ import javax.swing.AbstractListModel;
 import java.awt.Color;
 import javax.swing.ScrollPaneConstants;
 import java.awt.Font;
+import javax.swing.JTextField;
 
 public class Main extends JFrame {
 
 	private JPanel contentPane;
+	private JTextField txtBruceWill;
+	private JTextField textField;
 
 	/**
 	 * Launch the application.
@@ -88,17 +91,36 @@ public class Main extends JFrame {
 		lblNewLabel_1.setBounds(230, 16, 100, 100);
 		contentPane.add(lblNewLabel_1);
 		
+		JLabel lblRedigeraProfilbild = new JLabel("Redigera profilbild");
+		lblRedigeraProfilbild.setFont(new Font("Helvetica", Font.ITALIC, 13));
+		lblRedigeraProfilbild.setForeground(Color.LIGHT_GRAY);
+		lblRedigeraProfilbild.setBounds(230, 126, 109, 16);
+		contentPane.add(lblRedigeraProfilbild);
+		
 		JLabel lblNamn = new JLabel("Namn:");
 		lblNamn.setFont(new Font("Helvetica", Font.BOLD | Font.ITALIC, 15));
 		lblNamn.setForeground(Color.WHITE);
 		lblNamn.setBounds(230, 177, 61, 16);
 		contentPane.add(lblNamn);
 		
+		txtBruceWill = new JTextField();
+		txtBruceWill.setText("Bruce Willis");
+		txtBruceWill.setBounds(309, 171, 130, 26);
+		contentPane.add(txtBruceWill);
+		txtBruceWill.setColumns(10);
+		
 		JLabel lblPersonnr = new JLabel("Personnr:");
 		lblPersonnr.setFont(new Font("Helvetica", Font.BOLD | Font.ITALIC, 15));
 		lblPersonnr.setForeground(Color.WHITE);
 		lblPersonnr.setBounds(230, 205, 76, 16);
 		contentPane.add(lblPersonnr);
+		
+		textField = new JTextField();
+		textField.setFont(new Font("Lucida Grande", Font.PLAIN, 13));
+		textField.setText("1955-03-19");
+		textField.setBounds(309, 199, 130, 26);
+		contentPane.add(textField);
+		textField.setColumns(10);
 		
 		JLabel lblEpost = new JLabel("Epost:");
 		lblEpost.setForeground(Color.WHITE);
