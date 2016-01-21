@@ -83,34 +83,39 @@ public class Main extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		JLabel lblNewLabel_1 = new JLabel("New label");
+		lblNewLabel_1.setIcon(new ImageIcon(Main.class.getResource("/images/bruceW.jpg")));
+		lblNewLabel_1.setBounds(230, 16, 100, 100);
+		contentPane.add(lblNewLabel_1);
+		
 		JLabel lblNamn = new JLabel("Namn:");
 		lblNamn.setFont(new Font("Helvetica", Font.BOLD | Font.ITALIC, 15));
 		lblNamn.setForeground(Color.WHITE);
-		lblNamn.setBounds(231, 131, 61, 16);
+		lblNamn.setBounds(230, 177, 61, 16);
 		contentPane.add(lblNamn);
 		
 		JLabel lblPersonnr = new JLabel("Personnr:");
 		lblPersonnr.setFont(new Font("Helvetica", Font.BOLD | Font.ITALIC, 15));
 		lblPersonnr.setForeground(Color.WHITE);
-		lblPersonnr.setBounds(231, 159, 76, 16);
+		lblPersonnr.setBounds(230, 205, 76, 16);
 		contentPane.add(lblPersonnr);
 		
 		JLabel lblEpost = new JLabel("Epost:");
 		lblEpost.setForeground(Color.WHITE);
 		lblEpost.setFont(new Font("Helvetica", Font.BOLD | Font.ITALIC, 15));
-		lblEpost.setBounds(231, 185, 61, 16);
+		lblEpost.setBounds(230, 233, 61, 16);
 		contentPane.add(lblEpost);
 		
 		JLabel lblTelefon = new JLabel("Telefon:");
 		lblTelefon.setForeground(Color.WHITE);
 		lblTelefon.setFont(new Font("Helvetica", Font.BOLD | Font.ITALIC, 15));
-		lblTelefon.setBounds(231, 208, 61, 16);
+		lblTelefon.setBounds(230, 264, 61, 16);
 		contentPane.add(lblTelefon);
 		
 		JLabel lblAdress = new JLabel("Adress:");
 		lblAdress.setForeground(Color.WHITE);
 		lblAdress.setFont(new Font("Helvetica", Font.BOLD | Font.ITALIC, 15));
-		lblAdress.setBounds(231, 232, 61, 16);
+		lblAdress.setBounds(230, 294, 61, 16);
 		contentPane.add(lblAdress);
 		
 		JLabel lblNewLabel = new JLabel("New label");
