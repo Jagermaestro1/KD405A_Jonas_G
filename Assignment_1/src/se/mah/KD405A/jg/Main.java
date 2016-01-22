@@ -18,6 +18,7 @@ import java.awt.Color;
 import javax.swing.ScrollPaneConstants;
 import java.awt.Font;
 import javax.swing.JTextField;
+import javax.swing.JButton;
 
 public class Main extends JFrame {
 
@@ -139,6 +140,10 @@ public class Main extends JFrame {
 		lblAdress.setFont(new Font("Helvetica", Font.BOLD | Font.ITALIC, 15));
 		lblAdress.setBounds(230, 294, 61, 16);
 		contentPane.add(lblAdress);
+		
+		JButton btnSpara = new JButton("Spara");
+		btnSpara.setBounds(597, 382, 117, 29);
+		contentPane.add(btnSpara);
 		
 		JLabel lblNewLabel = new JLabel("New label");
 		lblNewLabel.setIcon(new ImageIcon(Main.class.getResource("/images/gym2.jpg")));
