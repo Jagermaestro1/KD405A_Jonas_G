@@ -92,10 +92,10 @@ public class Main extends JFrame {
 		lblNewLabel_1.setBounds(230, 16, 100, 100);
 		contentPane.add(lblNewLabel_1);
 		
-		JLabel lblRedigeraProfilbild = new JLabel("Redigera profilbild");
+		JLabel lblRedigeraProfilbild = new JLabel("Redigera \n");
 		lblRedigeraProfilbild.setFont(new Font("Helvetica", Font.ITALIC, 13));
 		lblRedigeraProfilbild.setForeground(Color.LIGHT_GRAY);
-		lblRedigeraProfilbild.setBounds(230, 126, 109, 16);
+		lblRedigeraProfilbild.setBounds(254, 128, 61, 16);
 		contentPane.add(lblRedigeraProfilbild);
 		
 		JLabel lblNamn = new JLabel("Namn:");
