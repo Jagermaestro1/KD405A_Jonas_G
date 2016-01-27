@@ -62,6 +62,7 @@ public class HouseGUI extends JFrame {
 				houses[8]= new House(1960,840);
 				houses[9]= new House(1980,820);				
 		//Uppgift 1.4
+				
 				Random r = new Random();
 				Random s = new Random();
 				
