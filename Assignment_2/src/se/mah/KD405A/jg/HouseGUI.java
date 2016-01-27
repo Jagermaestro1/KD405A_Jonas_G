@@ -119,7 +119,7 @@ public class HouseGUI extends JFrame {
 				textArea.append("Ditt hus " +q +" har fel byggår eller fel storlek. Det har demolerats.\n");
 			}
 		//Uppgift 1.4 Print
-			textArea.append("1.4 \n");
+			textArea.append("Uppgift 1.4 \n");
 			for(House h:bostadsarea){
 				if(h.getYearBuilt() !=0 && h.getSize() !=0){
 					 textArea.append( "Ett hus är byggt år:" +h.getYearBuilt() + " och är " +h.getSize() +"kvm stort. Grattis!\n");
