@@ -1,0 +1,42 @@
+Skapa en textfil där du svarar på följande frågor (Lägg filen i det projekt du skall skapa i uppgift 1.2). Ange vad som är:
+
+a) konstruktor	=		public House(int yearBuilt,int size){
+				
+b) instansvariabler	=	private int yearBuilt;
+						private int size;
+						private final int minSize = 10;
+
+c) instansmetoder = 	public int getYearBuilt(){
+						return this.yearBuilt;
+						}
+	
+						public int getSize(){
+						return this.size;
+						} 
+
+
+d) vad innebär det att minSize är deklarerad final?
+	Det innebär att den variabeln är slutgiltig. Alltså den går inte att ändra. minSize är alltid 10.
+
+
+e) vad innebär det att vissa koddelar är deklarerade private och andra public? 
+	"Private" koddelar är sådana som inte går att hämta utifrån. Alltså den kan bara nås inom sin egen klass
+	"Public" koddelar går att nå var som helst ifrån.
+
+
+f) Rita ett UML diagram över klassen (visa denna för handledaren).
+_________________________________________
+|										|
+|			     House					|
+|_______________________________________|
+| 										|
+| 		- yearBuilt: int				|
+| 		- size: int						|
+| 		- minSize = 10: int				|
+|_______________________________________|
+| 		+ House(YearBuilt, size): int	|
+| 		+ getYearBuilt(): int			|
+| 		+ getSize(): int				|
+|_______________________________________|
+
+g) lägg textfilen i projektet som du skapar i uppgift 1.2.

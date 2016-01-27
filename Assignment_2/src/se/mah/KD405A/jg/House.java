@@ -9,7 +9,7 @@ public class House {
 	private final int yearNew = 2015;
 	
 	public House(int yearBuilt,int size){
-		//this.yearBuilt = yearBuilt;
+		
 		if(size>=minSize && size<=maxSize){
 			this.size = size;
 		}else{
