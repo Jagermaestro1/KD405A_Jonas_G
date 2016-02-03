@@ -10,7 +10,24 @@ public class Bike {
 	public Bike(String color, int size) {
 		this.color = color;
 		this.size = size;
+
+boolean trueColor=false;
+	for(int i=0; i<=Constants.APPROVED_COLOR.length; i++){
+	if(Constants.APPROVED_COLOR[i].equals(color)){
+	trueColor=true;	
 	}
+	}
+if(trueColor == true){
+	this.color= color;
+} else{
+	this.color="fy fan vad fult";
+}
+	}
+	
+
+		
+		
+
 	public Bike(String color, int size, int price) {
 		this.color = "Black";
 		this.size = size;
