@@ -8,13 +8,13 @@ public class Bike {
 	
 //Constructors
 	public Bike(String color, int size) {
-		this.color = "Green";
-		this.size = 28;
+		this.color = color;
+		this.size = size;
 	}
 	public Bike(String color, int size, int price) {
 		this.color = "Black";
-		this.size = 24;
-		this.price=200;
+		this.size = size;
+		this.price=price;
 }
 	
 //Methods
@@ -32,4 +32,5 @@ public class Bike {
 		
 			this.price =price;
 		}
+	
 }
