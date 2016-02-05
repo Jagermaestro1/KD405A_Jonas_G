@@ -45,14 +45,14 @@ public class Bike {
 			this.color = "fy fan vad fult";
 		}
 
-		if (size >= MIN_SIZE && size <= MAX_SIZE) {
+		if (size >=Constants.MIN_SIZE && size <= Constants.MAX_SIZE) {
 			this.size = size;
 		} else {
 			this.size = 0;
 
 		}
 
-		if (price >= MIN_PRICE && price <= MAX_PRICE) {
+		if (price >=Constants.MIN_PRICE && price <= Constants.MAX_PRICE) {
 			this.price = price;
 		} else {
 			this.price = 0;
