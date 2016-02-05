@@ -11,6 +11,9 @@ import javax.swing.JTextArea;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JScrollPane;
 
 public class BikeGUI extends JFrame {
 
@@ -18,8 +21,8 @@ public class BikeGUI extends JFrame {
 	private JTextField textField_1;
 	private JTextField textField_2;
 	private JTextField textField_3;
-	private JTextArea textArea;
-
+	private BikeStore Bstore;
+	
 	/**
 	 * Launch the application.
 	 */
@@ -40,6 +43,7 @@ public class BikeGUI extends JFrame {
 	 * Create the frame.
 	 */
 	public BikeGUI() {
+		Bstore = new BikeStore();
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -80,13 +84,32 @@ public class BikeGUI extends JFrame {
 		lblPrice.setBounds(163, 164, 61, 16);
 		contentPane.add(lblPrice);
 		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(6, 35, 145, 222);
+		contentPane.add(scrollPane);
+		
+		JTextArea textArea_1 = new JTextArea();
+		scrollPane.setViewportView(textArea_1);
+		
+		
 		JButton btnAdd = new JButton("Add");
+		btnAdd.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String bcolor = textField_1.getText();
+				int bsize = Integer.parseInt(textField_2.getText()); 
+				int bprice = Integer.parseInt(textField_3.getText());
+				Bstore.addBike(bcolor, bsize, bprice);
+				textArea_1.setText(Bstore.getAllBikes());
+			}
+		});
+		
 		btnAdd.setBounds(311, 228, 117, 29);
 		contentPane.add(btnAdd);
 		
-		textArea = new JTextArea();
-		textArea.setBounds(6, 11, 117, 261);
-		contentPane.add(textArea);
+	
+		
+		
+		
 		
 		
 	}

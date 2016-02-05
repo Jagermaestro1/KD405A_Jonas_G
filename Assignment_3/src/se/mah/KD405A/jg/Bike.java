@@ -2,6 +2,10 @@ package se.mah.KD405A.jg;
 
 public class Bike {
 
+	private static final int MIN_SIZE = 0;
+	private static final int MAX_SIZE = 28;
+	private static final int MIN_PRICE = 0;
+	private static final int MAX_PRICE = 30000;
 	private String color;
 	private int size;
 	private int price;
@@ -41,8 +45,19 @@ public class Bike {
 			this.color = "fy fan vad fult";
 		}
 		
+		if (size >= MIN_SIZE && size <= MAX_SIZE) {
+			this.size = size;
+		} else {
+			this.size = 0;
+			
+		}
 		
-		
+		if (price >= MIN_PRICE && price <= MAX_PRICE) {
+			this.price = price;
+		} else {
+			this.price = 0;
+			
+		}
 }
 	
 	// Methods

@@ -14,12 +14,13 @@ public class BikeStore {
 		String s = "";
 
 		for (Bike c : lagret) {
-			s = s + c.getColor() + c.getPrice() + c.getSize();
+			s = s + "Färg: "+ c.getColor() + " Pris: " + c.getPrice() + " Storlek: " + c.getSize() + "\n";
 
 		}
 		return s;
 	}
 	public void addBike(String color, int size, int price){
-		lagret.add(new Bike(color, size,price));
+		Bike  c = new Bike(color, size, price);
+		this.lagret.add(c);
 	}
 }
