@@ -19,6 +19,7 @@ public class GUI extends JFrame {
 	private JTextField txtSize;
 	private JTextField txtPrice;
 	private BikeStore bikeStore;
+
 	/**
 	 * Launch the application.
 	 */
@@ -46,29 +47,29 @@ public class GUI extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
+
 		txtColor = new JTextField();
 		txtColor.setText("Color");
 		txtColor.setBounds(314, 47, 130, 26);
 		contentPane.add(txtColor);
 		txtColor.setColumns(10);
-		
+
 		txtSize = new JTextField();
 		txtSize.setText("Size");
 		txtSize.setBounds(314, 85, 130, 26);
 		contentPane.add(txtSize);
 		txtSize.setColumns(10);
-		
+
 		txtPrice = new JTextField();
 		txtPrice.setText("Price");
 		txtPrice.setBounds(314, 123, 130, 26);
 		contentPane.add(txtPrice);
 		txtPrice.setColumns(10);
-		
+
 		JTextArea textArea = new JTextArea();
 		textArea.setBounds(20, 34, 282, 217);
 		contentPane.add(textArea);
-		
+
 		JButton btnAdd = new JButton("Add");
 		btnAdd.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
