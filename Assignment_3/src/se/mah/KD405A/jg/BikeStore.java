@@ -3,6 +3,10 @@ package se.mah.KD405A.jg;
 import java.util.ArrayList;
 
 public class BikeStore {
+	
+	public BikeStore(){
+	}
+	
 
 	private ArrayList<Bike> lagret = new ArrayList<Bike>();
 
