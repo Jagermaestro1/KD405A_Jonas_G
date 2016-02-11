@@ -1,5 +1,6 @@
 package KD405A_gabrielsson_j_uppgift4B;
 
+/** klassen Dog är en subklass till Mammal */
 public class Dog extends Mammal {
 	private boolean stupid;
 
@@ -23,7 +24,7 @@ public class Dog extends Mammal {
 		if (isStupid() == true) {
 			smartOrStupid = "stupid";
 		}
-		// String smartOrStupid = isStupid() ? "stupid" : "not stupid";
+		
 		String info = "The dog named \"" + getFriendlyName() + "\" with the latin name " + latinName + " nurses for "
 				+ gestationTime + " months and is " + smartOrStupid + "\n";
 		return info;

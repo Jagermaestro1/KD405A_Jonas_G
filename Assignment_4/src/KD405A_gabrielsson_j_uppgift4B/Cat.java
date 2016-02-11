@@ -1,5 +1,6 @@
 package KD405A_gabrielsson_j_uppgift4B;
 
+/** klassen Cat är en subklass till Mammal */
 public class Cat extends Mammal {
 	private int numberOfLifes;
 

@@ -1,5 +1,6 @@
 package KD405A_gabrielsson_j_uppgift4B;
 
+/** Klassen Snake är en subklass till Animal */
 public class Snake extends Animal {
 	private boolean poisonous = false;
 

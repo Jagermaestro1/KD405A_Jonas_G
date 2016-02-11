@@ -1,5 +1,6 @@
 package KD405A_gabrielsson_j_uppgift4B;
 
+/** Abstrata klassen Mammal är en subklass till Animal */
 public abstract class Mammal extends Animal {
 	protected int gestationTime;
 

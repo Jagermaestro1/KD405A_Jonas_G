@@ -14,8 +14,7 @@ public class AGUI extends JFrame {
 
 	private JPanel contentPane;
 	private ArrayList<Animal> animalList = new ArrayList();
-	//private String animalInfo;
-
+	// private String animalInfo;
 
 	/**
 	 * Launch the application.
@@ -32,7 +31,8 @@ public class AGUI extends JFrame {
 			}
 		});
 	}
-	private void addAnimals(){
+
+	private void addAnimals() {
 		this.animalList.add(new Dog("Gunde", 5, true));
 		this.animalList.add(new Dog("Angelina Jolie", 3, false, "Brad Pitt"));
 		this.animalList.add(new Cat("Sylvester Stallone", 12, 9));
@@ -51,19 +51,19 @@ public class AGUI extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
+
 		JTextArea textArea = new JTextArea();
 		textArea.setBounds(6, 27, 621, 245);
 		contentPane.add(textArea);
 		addAnimals();
-		for(Animal a: animalList){
+		for (Animal a : animalList) {
 			String animalInfo = a.getInfo();
-		System.out.println(animalInfo);
-		textArea.append(animalInfo);
-		
-		JLabel lblAnimalList = new JLabel("Animal List");
-		lblAnimalList.setBounds(6, 6, 110, 16);
-		contentPane.add(lblAnimalList);
-	}
+			System.out.println(animalInfo);
+			textArea.append(animalInfo);
+
+			JLabel lblAnimalList = new JLabel("Animal List");
+			lblAnimalList.setBounds(6, 6, 110, 16);
+			contentPane.add(lblAnimalList);
+		}
 	}
 }

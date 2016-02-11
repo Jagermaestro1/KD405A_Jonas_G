@@ -1,5 +1,6 @@
 package KD405A_gabrielsson_j_uppgift4B;
 
+/** Abstrakta klassen Animal */
 public abstract class Animal {
 	protected String latinName;
 	private String friendlyName = "noname";
