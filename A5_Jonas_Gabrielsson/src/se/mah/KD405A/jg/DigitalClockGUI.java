@@ -55,10 +55,10 @@ public class DigitalClockGUI extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
-		JLabel lblNewLabel = new JLabel("ALARM");
-		lblNewLabel.setFont(new Font("Lucida Grande", Font.BOLD, 20));
-		lblNewLabel.setBounds(40, 6, 82, 31);
-		contentPane.add(lblNewLabel);
+		JLabel lblALARM = new JLabel("ALARM");
+		lblALARM.setFont(new Font("Lucida Grande", Font.BOLD, 20));
+		lblALARM.setBounds(40, 6, 82, 31);
+		contentPane.add(lblALARM);
 
 		JLabel lblHour = new JLabel("Hour:");
 		lblHour.setBounds(20, 128, 41, 16);
@@ -92,7 +92,7 @@ public class DigitalClockGUI extends JFrame {
 						JOptionPane.showMessageDialog(null, "WRONG!!!");
 					} else {
 						clock.setAlarm(hour, minute);
-						lblAlarm.setText(txtH.getText() + " : " + txtM.getText());
+						lblALARM.setText(txtH.getText() + " : " + txtM.getText());
 					}
 				}
 			}
@@ -106,7 +106,7 @@ public class DigitalClockGUI extends JFrame {
 				clock.clearAlarm();
 				txtH.setText("");
 				txtM.setText("");
-				lblAlarm.setText("no alarm");
+				lblALARM.setText("no alarm");
 			}
 		});
 		btnClearAlarm.setBounds(17, 226, 117, 29);
