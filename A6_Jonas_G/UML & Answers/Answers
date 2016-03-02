@@ -1,0 +1,19 @@
+1. Malmö C - Lund C
+
+ 2. http://www.labs.skanetrafiken.se/v2.2/resultspage.asp?cmdaction=next&selPointFr=0|80000|0&selPointTo=0|81216|0&NoOf=5
+
+3. 
+
+<Journeys></Journeys> innehåller resor som matchar sökningen
+<Journey></Jouney> innehåller information om en specifik resa
+<Route- Links></RouteLinks> delresor
+<RouteLink></RouteLink> information om delresorna tex pris, avgång, ankomst etc… 
+
+
+
+4<NoOfChanges> ligger under taggen <Journey>
+
+
+
+
+5 <RouteLinks>
