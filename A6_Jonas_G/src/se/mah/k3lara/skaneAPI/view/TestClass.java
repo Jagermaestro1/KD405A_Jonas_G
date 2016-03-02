@@ -13,11 +13,13 @@ import se.mah.k3lara.skaneAPI.xmlparser.Parser;
 
 public class TestClass {
 
-	public static void main(String[] args) {
-		String searchURL = Constants.getURL("80000","81216",20); //Malm� C = 80000,  Lund C, 81216 Malm� Gatorg 80100, H�ssleholm C 93070
+	public static void main(String[] args) { 
+		// från malmö c - lund c med 20st sökresultat
+		String searchURL = Constants.getURL("80000","81216",20); //Malm� C = 80000,  Lund C, 81216 Malm� Gatorg 80100, H�ssleholm C 93070
 		System.out.println(searchURL);
 		System.out.println("// Results when searching:");
 		
+		//hämtar resor från skånetrafiken
 		Journeys journeys = Parser.getJourneys(searchURL);
 		for (Journey journey : journeys.getJourneys()) {
 			System.out.print(journey.getStartStation()+" - ");
@@ -27,13 +29,15 @@ public class TestClass {
 		} 
 		
 	   System.out.println("// Stations when searching for stations containing \"Malm\"");
+	   //skapar arraylist som håller stationer
 		ArrayList<Station> searchStations = new ArrayList<Station>(); 
+		//söker stationer som innehåller börjar med "Malm"
 		searchStations.addAll(Parser.getStationsFromURL("Malm"));
 		for (Station s: searchStations){
 			System.out.println(s.getStationName() +" number:" +s.getStationNbr());
 		}
 		
-		System.out.println("// Busses departing from Ub�tshallen stationsnummer 80046 ");
+		System.out.println("// Busses departing from Ub�tshallen stationsnummer 80046 ");
 		Lines lines = Parser.getStationResults(new Station("80046"));
 		for (Line l : lines.getLines()) {
 			System.out.println("Line " + l.getLine() +" departs: "+l.getDepTime().get(Calendar.HOUR_OF_DAY)+":"+l.getDepTime().get(Calendar.MINUTE)+
