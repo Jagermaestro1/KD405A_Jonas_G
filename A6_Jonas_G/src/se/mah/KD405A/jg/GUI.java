@@ -88,7 +88,7 @@ public class GUI extends JFrame implements ActionListener {
 		panel.add(lblSkHllplats);
 		
 		lblCreatedByMasjvel = new JLabel("Created by: Masjävel");
-		lblCreatedByMasjvel.setBounds(22, 244, 158, 16);
+		lblCreatedByMasjvel.setBounds(22, 244, 345, 16);
 		panel.add(lblCreatedByMasjvel);
 
 		JPanel panel_1 = new JPanel();
