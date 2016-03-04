@@ -1,3 +1,3 @@
 # KD405A_Jonas_G
 
-![alt tag] (http://imgur.com/3kvZfnr)
+![alt tag] (http://i.imgur.com/3kvZfnr.jpg)
