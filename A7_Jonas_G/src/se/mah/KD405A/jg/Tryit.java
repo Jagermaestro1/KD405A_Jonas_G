@@ -41,7 +41,7 @@ public class Tryit extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
-		PixelController px = PixelController.getInstance(Screen.MEDEA_1);
+		PixelController px = PixelController.getInstance(Screen.ASSIGNMENT_7);
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
